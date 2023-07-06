@@ -1,6 +1,6 @@
 import React from "react"
 
-const D_Fiche_Logement = () => {
+const FicheLogement = () => {
     return (
         <div>
             <h1> Logement</h1>
@@ -8,4 +8,4 @@ const D_Fiche_Logement = () => {
     );
 };
 
-export default D_Fiche_Logement; 
+export default FicheLogement; 

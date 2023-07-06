@@ -1,6 +1,6 @@
 import React from "react"
 
-const D_404 = () => {
+const D404 = () => {
     return (
         <div>
             <h1>Error 404 </h1>
@@ -8,4 +8,4 @@ const D_404 = () => {
     );
 };
 
-export default D_404;
+export default D404;
