@@ -1,24 +1,21 @@
-import logo from './logo.svg';
 import './assets/App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import D_Home from './pages/D_Home';
+import D_Fiche_Logement from './pages/D_Fiche-Logement';
+import D_404 from './pages/D_404';
+import D_Apropos from './pages/D_Apropos';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<D_Home />} />
+        <Route path="/D_Fiche-logement" element={<D_Fiche_Logement />} />
+        <Route path="/D_404" element={<D_404 />} />
+        <Route path='/D_A-propos' element={< D_Apropos />} />
+
+      </Routes>
+    </BrowserRouter>
   );
 }
 
