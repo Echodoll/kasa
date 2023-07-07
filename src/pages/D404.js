@@ -1,9 +1,11 @@
 import React from "react"
+import Banner from "../composents/Banner"
 
 const D404 = () => {
     return (
         <div>
-            <h1>Error 404 </h1>
+            <Banner />
+            <h1>ERROR</h1>
         </div>
     );
 };

@@ -1,0 +1,23 @@
+@import 'variables';
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 15px 18px;
+    color: $primary-color;
+}
+
+.banner {
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-between;
+&__nav{
+    display: flex;
+    flex-direction: wrap;
+    font-size:24px;
+    gap:50px;
+}
+&__img {
+    width: 210px;
+    height: 68px;
+}
+}
