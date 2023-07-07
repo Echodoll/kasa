@@ -4,13 +4,13 @@ import '../assets/home.css'
 
 const Banner = () => {
     return (
-        <div className='banner'>
-            <img src={Logo} alt='Logo de Kasa' className='banner__img'></img>
+        <header className='banner'>
+            <img src={Logo} alt='Logo de Kasa' className='banner__logo'></img>
             <div className='banner__nav'>
                 <p>Accueil</p>
                 <p>A Propos</p>
             </div>
-        </div>
+        </header>
     );
 };
 
