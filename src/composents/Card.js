@@ -1,17 +1,17 @@
-import DataList from '../datas/logements.json'
-import '../assets/home.css'
+import logements from '../datas/logements.json'
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-const Card = () => {
+function Card() {
     return (
-        <section className='card'>
-            {DataList.map((data) => (
-                <div key={data.id} className='card__div'>
-                    <img src={data.cover} alt={data.title}></img>
-                    <p className='card__title'>{data.title}</p>
-                </div>
+        <div className='card__style'>
+            {logements.map((logement) => (
+                <Link to={`/D_Fiche-Logement/${logement.id}`} key={logement.id} className='card__div'>
+                    <img src={logement.cover} alt={logement.title}></img>
+                    <p className='card__title'>{logement.title}</p>
+                </Link>
             ))};
-        </section>
-    );
-};
-
+        </div>
+    )
+}
 export default Card

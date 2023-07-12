@@ -1,5 +1,5 @@
 import React from "react"
-import Banner from "../composents/Banner"
+import Banner from "../composents/Navigation"
 import Footer from "../composents/Footer";
 
 const D404 = () => {

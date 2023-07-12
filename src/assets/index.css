@@ -20,6 +20,10 @@ main, header {
   font-size: 24px;
   gap: 50px;
 }
+.banner__nav a {
+  text-decoration: none;
+  color: #FF6060;
+}
 .banner__logo {
   width: 210px;
   height: 68px;

@@ -1,12 +1,23 @@
 import React from "react"
-import Banner from "../composents/Banner"
 import Footer from "../composents/Footer";
+import Navigation from "../composents/Navigation";
+import Carrousel from "../composents/CarrouselComposent";
+import TitleLocation from "../composents/TitleLogement";
+import TagLine from "../composents/Tagline";
+
+
+
 
 const FicheLogement = () => {
+
     return (
         <div>
-            <Banner />
-            <h1> Logement</h1>
+            <Navigation />
+            <main>
+                <Carrousel />
+                <TitleLocation />
+                <TagLine />
+            </main>
             <Footer />
         </div>
     );
