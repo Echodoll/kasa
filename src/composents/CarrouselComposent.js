@@ -1,13 +1,11 @@
 import React, { useState } from "react"
-import logements from '../datas/logements.json'
-import { useParams } from "react-router-dom"
 import ArrowRight from "../picture/arrow_forward_ios-24px 1.png"
 import ArrowLeft from "../picture/arrow_back_ios-24px 1.png"
 import "../assets/ficheLogement.css"
+import useLogement from "./UseLogement"
 
 function Carrousel() {
-    const { id } = useParams();
-    const logement = logements.find((item) => item.id === id)
+    const logement = useLogement();
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const nextImage = () => {
         setCurrentImageIndex((nextIndex) => (nextIndex + 1) % logement.pictures.length)
@@ -19,7 +17,6 @@ function Carrousel() {
             } else {
                 return (prevIndex - 1) % logement.pictures.length;
             }
-
         });
     }
     const currentImage = logement.pictures[currentImageIndex]
