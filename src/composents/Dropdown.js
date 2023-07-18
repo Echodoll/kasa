@@ -12,12 +12,15 @@ function Dropdown({ children, text }) {
         <div className="dropdown">
             <div className="dropdown__config">
                 <p className="dropdown__config--text"> {text}</p>
-                <img onClick={handleClick} src={Arrow} alt="Fléche pour afficher la description"
+                <img
+                    onClick={handleClick}
+                    src={Arrow}
+                    alt="Fléche pour afficher la description"
                     className={isRotated ? "rotated" : "arrow"} />
 
             </div >
             {isOpen &&
-                <div className="dropdown__config--content open">
+                <div className={`dropdown__config--content ${isOpen ? "open" : ""}`}>
                     {children}
                 </div>
             }

@@ -1,0 +1,17 @@
+.error {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 130px;
+  color: #FF6060;
+  margin: 150px;
+}
+.error h1 {
+  font-size: 250px;
+  font-weight: 700;
+}
+.error__paragraph {
+  font-size: 26px;
+}
+
+/*# sourceMappingURL=404.css.map */
