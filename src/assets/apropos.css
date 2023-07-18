@@ -1,0 +1,15 @@
+.dropApropos {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.drop__apropos {
+  width: 80%;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=apropos.css.map */

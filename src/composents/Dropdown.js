@@ -11,21 +11,19 @@ function Dropdown({ children, text }) {
     return (
         <div className="dropdown">
             <div className="dropdown__config">
-                <p className="dropdown__config--text"> {text}</p>
+                <p className="dropdown__config--text">{text}</p>
                 <img
                     onClick={handleClick}
                     src={Arrow}
                     alt="Fléche pour afficher la description"
-                    className={isRotated ? "rotated" : "arrow"} />
-
-            </div >
-            {isOpen &&
-                <div className={`dropdown__config--content ${isOpen ? "open" : ""}`}>
-                    {children}
-                </div>
-            }
-        </div>
-    )
+                    className={isRotated ? "rotated" : "arrow"}
+                />
+            </div>
+            <div className={`dropdown__config--content ${isOpen ? "open" : ""}`}>
+                {children}
+            </div>
+        </div >
+    );
 }
 
 export default Dropdown; 

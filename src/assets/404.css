@@ -11,7 +11,11 @@
   font-weight: 700;
 }
 .error__paragraph {
-  font-size: 26px;
+  font-size: 36px;
+}
+.error__link {
+  color: #FF6060;
+  text-decoration: underline #FF6060;
 }
 
 /*# sourceMappingURL=404.css.map */

@@ -12,8 +12,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/D_Fiche-Logement/:id" element={<FicheLogement />} />
-        <Route path="*" element={<D404 />} />
+        <Route path="/D404" element={<D404 />}></Route>
         <Route path='/D_A-propos' element={< Apropos />} />
+        <Route path="*" element={<D404 />} />
 
       </Routes>
     </BrowserRouter>

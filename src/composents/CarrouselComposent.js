@@ -7,6 +7,7 @@ import useLogement from "./UseLogement"
 function Carrousel() {
     const logement = useLogement();
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const pictureCounter = `${currentImageIndex + 1} / ${logement.pictures.length}`
     const nextImage = () => {
         setCurrentImageIndex((nextIndex) => (nextIndex + 1) % logement.pictures.length)
     };
@@ -20,8 +21,13 @@ function Carrousel() {
         });
     }
     const currentImage = logement.pictures[currentImageIndex]
-    const pictureCounter = `${currentImageIndex + 1} / ${logement.pictures.length}`
-
+    if (logement.pictures.length === 1) {
+        return (
+            <section className="carrousel">
+                <img src={currentImage} alt="logement" className="carrousel__img" />
+            </section>
+        );
+    }
     return (
         <section className="carrousel">
             <img src={currentImage} alt="logement" className="carrousel__img" />

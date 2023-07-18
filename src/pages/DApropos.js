@@ -5,6 +5,7 @@ import BannerPicture from "../composents/PictureBanner";
 import Picture from '../picture/Image source 2.png'
 import Dropdown from "../composents/Dropdown";
 import "../assets/ficheLogement.css"
+import "../assets/apropos.css"
 const A_propos = () => {
     return (
         <div>
