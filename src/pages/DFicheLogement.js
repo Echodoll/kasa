@@ -17,8 +17,14 @@ const FicheLogement = () => {
                 <Carrousel />
                 <TitleLocation />
                 <section className="drop">
-                    <Dropdown text="Description" content={logement.description} />
-                    <Dropdown text="Equipement" content={<ul>{logement.equipments.map((equipements) => <li>{equipements}</li>)} </ul>} />
+                    <Dropdown text="Description">
+                        <p>{logement.description}</p>
+                    </Dropdown>
+                    <Dropdown text="Equipement">
+                        {<ul>{logement.equipments.map((equipement) =>
+                            <li key={equipement}>{equipement}</li>)}
+                        </ul>}
+                    </Dropdown>
                 </section>
             </main>
             <Footer />
