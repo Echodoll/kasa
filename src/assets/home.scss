@@ -21,7 +21,8 @@ position: relative;
 }
 &__div::before{
     content: "";
-    background: linear-gradient(180deg, rgba(255,96,96,0.1195071778711485) 74%, rgba(45,21,21,0.3071822478991597) 90%);    position: absolute;
+    background: linear-gradient(180deg, rgba(2, 2, 2, 0.12) 61%, rgb(4 4 4 / 51%) 81%);    
+    position: absolute;
     width: 100%;
     height: 100%;
     border-radius: 20px;
