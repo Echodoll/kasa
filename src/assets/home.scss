@@ -7,6 +7,7 @@
     background-color: $color-card;
     @include border-radius(20px);
     padding: 50px 30px ;
+    cursor: pointer;
 &__style {
     @include flex (row, center);
     gap: 45px;

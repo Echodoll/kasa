@@ -21,6 +21,10 @@ main, header {
 &__nav a {
     text-decoration: none;
     color: $primary-color;
+    cursor: pointer;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 &__logo {
     width: 210px;
