@@ -41,9 +41,13 @@
   flex-direction: row;
   justify-content: normal;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 100%;
   color: #FF6060;
   padding: 30px 0px;
+}
+.title__info {
+  width: 70%;
 }
 .title h1 {
   font-size: 51px;
@@ -63,8 +67,7 @@
   display: flex;
   flex-direction: row;
   justify-content: normal;
-  align-items: center;
-  justify-content: space-around;
+  width: 20%;
 }
 .title__name p {
   width: 90px;
@@ -75,6 +78,7 @@
   flex-direction: row;
   justify-content: normal;
   justify-content: space-between;
+  width: 50%;
 }
 .retail__tagline {
   display: flex;
@@ -117,19 +121,28 @@
   background-color: #FF6060;
 }
 .dropdown__config--content {
-  max-height: 0;
   overflow: hidden;
-  opacity: 0;
   background-color: #F6F6F6;
   color: #FF6060;
   font-size: 18px;
   padding: 20px;
   font-weight: 300;
   line-height: 25px;
-  transition: max-height 1.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 .dropdown__config--content li {
   list-style-type: none;
+}
+
+.open {
+  max-height: 1000px;
+  opacity: 1;
+  transition: max-height 1s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.close {
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 1s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .rotated {
@@ -142,23 +155,46 @@
   transform: rotate(0deg);
 }
 
-.open {
-  max-height: 1000px;
-  opacity: 1;
-}
-
-.dropApropos {
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.drop__apropos {
-  width: 80%;
-  display: flex;
-  gap: 30px;
-  flex-direction: column;
+@media screen and (max-width: 768px) {
+  .title {
+    width: 100%;
+  }
+  .title__info {
+    width: 100%;
+  }
+  .title__name {
+    order: 4;
+    width: auto;
+  }
+  .retail {
+    width: 100%;
+    padding: 20px 0px;
+  }
+  .drop {
+    flex-direction: column;
+    gap: 35px;
+  }
+  .dropdown__config--content {
+    padding: 0px;
+  }
+  .carrousel__counter {
+    display: none;
+  }
+  .star {
+    align-items: center;
+    display: flex;
+  }
+  .star img {
+    width: 18px;
+  }
+  .carrousel__arrow {
+    width: 24px;
+    height: 24px;
+    bottom: 45%;
+  }
+  .carrousel__img {
+    height: 255px;
+  }
 }
 
 /*# sourceMappingURL=ficheLogement.css.map */

@@ -6,7 +6,7 @@ const Cards = () => {
         <section className='card'>
             <Card />
         </section>
-    );
-};
+    )
+}
 
 export default Cards 

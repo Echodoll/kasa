@@ -19,7 +19,7 @@ function Dropdown({ children, text }) {
                     className={isRotated ? "rotated" : "arrow"}
                 />
             </div>
-            <div className={`dropdown__config--content ${isOpen ? "open" : ""}`}>
+            <div className={`dropdown__config--content ${isOpen ? "open" : "close"}`}>
                 {children}
             </div>
         </div >

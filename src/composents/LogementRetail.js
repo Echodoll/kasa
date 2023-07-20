@@ -19,16 +19,14 @@ const TitleLocation = () => {
         )
     }
     return (
-        <section >
-            <div className="title">
-                <div className='title__info'>
-                    <h1> {logement.title}</h1>
-                    <p> {logement.location}</p>
-                </div>
-                <div className='title__name'>
-                    <p> {logement.host.name} </p>
-                    <img src={logement.host.picture} alt={logement.host.name}></img>
-                </div>
+        <section className="title" >
+            <div className='title__info'>
+                <h1> {logement.title}</h1>
+                <p> {logement.location}</p>
+            </div>
+            <div className='title__name'>
+                <p> {logement.host.name} </p>
+                <img src={logement.host.picture} alt={logement.host.name}></img>
             </div>
             <div className="retail">
                 <div className='retail__tagline'>
@@ -36,8 +34,8 @@ const TitleLocation = () => {
                         <p key={index}>{tag}</p>
                     ))}
                 </div >
-                <div> {stars}</div>
             </div>
+            <div className="star"> {stars}</div>
         </section>
     )
 }
