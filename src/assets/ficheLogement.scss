@@ -189,3 +189,42 @@ align-items: center;
     height:255px;
 }
 }
+@media  screen and (max-width:425px) {
+    .title__info h1 {
+        font-size: 18px;
+    }
+    .title p {
+        font-size: 14px;
+    }
+    .title img {
+        width: 32px;
+    }
+    .retail__tagline p {
+        font-size: 10px;
+    }
+    .drop{
+        gap: 20px;
+    }
+    .dropdown__config{
+        padding: 5px;
+   &--text  {
+        font-size: 13px;
+    }
+    &--content {
+        font-size: 13px;
+        padding: 10px;
+        & ul {
+            padding: 0px;
+        }
+    }
+    }
+    .title__name{
+        display: flex;
+        align-items: center;
+   & p {
+        font-size: 12px;
+        flex-wrap: wrap;
+        width: 50%;
+    }
+    }
+}
