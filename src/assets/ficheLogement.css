@@ -139,6 +139,8 @@
   padding: 20px;
   font-weight: 300;
   line-height: 25px;
+  max-height: 0;
+  transition: max-height 1s ease-in-out, opacity 0.3s ease-in-out;
 }
 .dropdown__config--content li {
   list-style-type: none;
@@ -147,13 +149,11 @@
 .open {
   max-height: 1000px;
   opacity: 1;
-  transition: max-height 1s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .close {
   max-height: 0;
   opacity: 0;
-  transition: max-height 1s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .rotated {
@@ -197,6 +197,7 @@
   }
   .star img {
     width: 18px;
+    height: 18px;
   }
   .carrousel__arrow {
     width: 24px;

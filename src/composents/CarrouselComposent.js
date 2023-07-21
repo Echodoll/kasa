@@ -7,20 +7,25 @@ import useLogement from "./UseLogement"
 function Carrousel() {
     const logement = useLogement();
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
-    const pictureCounter = `${currentImageIndex + 1} / ${logement.pictures.length}`
-    const nextImage = () => {
-        setCurrentImageIndex((nextIndex) => (nextIndex + 1) % logement.pictures.length)
+    const [key, setKey] = useState(0);
+    const getPictureCounter = () => {
+        return `${currentImageIndex + 1} / ${logement.pictures.length}`;
     };
+    const nextImage = () => {
+        setCurrentImageIndex((nextIndex) => (nextIndex + 1) % logement.pictures.length);
+        setKey((prevKey) => prevKey + 1);
+    };
+
     const previousImage = () => {
-        setCurrentImageIndex((prevIndex) => {
-            if (prevIndex === 0) {
-                return logement.pictures.length - 1;
-            } else {
-                return (prevIndex - 1) % logement.pictures.length;
-            }
-        });
-    }
+        setCurrentImageIndex((prevIndex) =>
+            prevIndex === 0 ? logement.pictures.length - 1 : (prevIndex - 1) % logement.pictures.length
+        );
+        setKey((prevKey) => prevKey + 1);
+    };
     const currentImage = logement.pictures[currentImageIndex]
+
+    console.log(currentImageIndex)
+    console.log(getPictureCounter())
     if (logement.pictures.length === 1) {
         return (
             <section className="carrousel">
@@ -29,11 +34,11 @@ function Carrousel() {
         );
     }
     return (
-        <section className="carrousel">
+        <section className="carrousel" key={key}>
             <img src={currentImage} alt="logement" className="carrousel__img" />
             <img src={ArrowRight} alt="Fléche droite " onClick={nextImage} className="carrousel__arrow carrousel__arrow--right "></img>
             <img src={ArrowLeft} alt='Fléche gauche' onClick={previousImage} className="carrousel__arrow carrousel__arrow--left"></img>
-            <div className="carrousel__counter"> {pictureCounter}</div>
+            <div className="carrousel__counter"> {getPictureCounter()}</div>
         </section>
     )
 }
