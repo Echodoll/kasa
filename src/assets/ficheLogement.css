@@ -57,6 +57,7 @@
 }
 .title p {
   font-size: 18px;
+  padding-bottom: 20px;
 }
 .title img {
   border-radius: 50%;
@@ -79,7 +80,7 @@
   flex-direction: row;
   justify-content: normal;
   justify-content: space-between;
-  width: 50%;
+  width: 70%;
 }
 .retail__tagline {
   display: flex;
@@ -101,7 +102,9 @@
 
 .star {
   display: flex;
+  width: 30%;
   align-items: center;
+  justify-content: flex-end;
 }
 .star img {
   width: 36px;
@@ -167,11 +170,18 @@
 }
 
 @media screen and (max-width: 768px) {
+  .title__info h1 {
+    font-size: 34px;
+  }
   .title {
     width: 100%;
   }
+  .title p {
+    font-size: 14px;
+  }
   .title__info {
     width: 100%;
+    font-size: 16px;
   }
   .title__name {
     order: 4;
@@ -194,6 +204,7 @@
   .star {
     align-items: center;
     display: flex;
+    justify-content: flex-start;
   }
   .star img {
     width: 18px;
@@ -209,9 +220,6 @@
   }
 }
 @media screen and (max-width: 425px) {
-  .title__info h1 {
-    font-size: 18px;
-  }
   .title p {
     font-size: 14px;
   }
