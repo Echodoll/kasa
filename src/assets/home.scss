@@ -72,6 +72,15 @@ position: relative;
     text-align: center;
 }
 }
+@media  screen and (max-width: 1160px) {
+    .card__style {
+        gap: 30px;
+    }
+    .card__div {
+        height: 250px;
+    }
+    
+}
 @media screen and (max-width:1024px) {
     main {
         margin: 20px;
@@ -80,16 +89,17 @@ position: relative;
         margin: 20px;
     }
    .picture__banner--text{
-    font-size: 24px;
+    font-size: 30px;
+   }
+   .picture__banner img {
+    height: 200px;
    }
    .card {
     padding: 30px;
-   &__style {
-    flex-direction: column;
-
-   }
+    &__title {
+        font-size: 14px;
+    }
    &__div {
-    width: 100%;
     height: 255Px;
    }
 }
@@ -133,6 +143,12 @@ position: relative;
         background-color: white;
         padding:0px;
         margin: 35px 0px;
+        &__style {
+            flex-direction: column;
+           }
+        &__div {
+            width: 100%;
+        }
     }
     footer {
         gap: 20px;
