@@ -5,18 +5,16 @@
 .card {
   background-color: #F6F6F6;
   border-radius: 20px;
-  padding: 50px 30px;
+  padding: 30px;
   cursor: pointer;
 }
 .card__style {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  display: grid;
+  justify-content: start;
   gap: 45px;
-  flex-wrap: wrap;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .card__div {
-  width: 30%;
   height: 340px;
   border-radius: 20px;
   position: relative;
@@ -89,7 +87,7 @@
     margin: 20px;
   }
   .picture__banner--text {
-    font-size: 30px;
+    font-size: 34px;
   }
   .picture__banner img {
     height: 200px;
@@ -130,6 +128,7 @@
   .picture__banner--text {
     display: flex;
     align-items: center;
+    font-size: 26px;
   }
   .picture__banner h1 {
     text-align: start;
@@ -144,6 +143,7 @@
     margin: 35px 0px;
   }
   .card__style {
+    display: flex;
     flex-direction: column;
   }
   .card__div {

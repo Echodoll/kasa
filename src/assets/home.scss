@@ -6,16 +6,16 @@
 .card {
     background-color: $color-card;
     @include border-radius(20px);
-    padding: 50px 30px ;
+    padding: 30px ;
     cursor: pointer;
 &__style {
-    @include flex (row, center);
+    display: grid;
+    justify-content: start;
     gap: 45px;
-    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 &__div {
-width: 30%;
 height: 340px;
 @include border-radius(20px);
 position: relative;
@@ -89,7 +89,7 @@ position: relative;
         margin: 20px;
     }
    .picture__banner--text{
-    font-size: 30px;
+    font-size: 34px;
    }
    .picture__banner img {
     height: 200px;
@@ -130,6 +130,7 @@ position: relative;
         &--text{
             display: flex;
             align-items: center;
+            font-size: 26px;
         }
     & h1 {
         text-align: start;
@@ -144,6 +145,7 @@ position: relative;
         padding:0px;
         margin: 35px 0px;
         &__style {
+            display: flex;
             flex-direction: column;
            }
         &__div {
