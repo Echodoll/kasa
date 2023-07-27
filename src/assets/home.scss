@@ -19,6 +19,9 @@
 height: 340px;
 @include border-radius(20px);
 position: relative;
+transition: all 300ms ease-in-out;
+
+
 }
 &__div::before{
     content: "";
@@ -33,6 +36,7 @@ position: relative;
     object-fit: cover;
     width: 100%;
     height: 100%;
+
 }
 &__title {
     position: absolute;
