@@ -125,6 +125,7 @@
   width: 100%;
 }
 .dropdown__config {
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;

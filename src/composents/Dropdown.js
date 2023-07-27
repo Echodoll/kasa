@@ -9,11 +9,11 @@ function Dropdown({ children, text }) {
         setIsOpen(!isOpen);
     }
     return (
-        <div className="dropdown">
+        <div className="dropdown" onClick={handleClick}
+        >
             <div className="dropdown__config">
                 <p className="dropdown__config--text">{text}</p>
                 <img
-                    onClick={handleClick}
                     src={Arrow}
                     alt="Fléche pour afficher la description"
                     className={isRotated ? "rotated" : "arrow"}
