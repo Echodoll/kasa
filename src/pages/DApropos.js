@@ -9,8 +9,8 @@ import "../assets/apropos.css"
 const A_propos = () => {
     return (
         <div>
+            <Navigation />
             <main >
-                <Navigation />
                 <BannerPicture banner={Picture} alt="Photos de Montagne" className="a__propos" />
                 <section className="drop dropApropos">
                     <div className="drop__apropos">

@@ -11,7 +11,7 @@ const Home = () => {
         <div>
             <Navigation />
             <main>
-                <PictureBanner banner={Picture} alt="Photos de montagne" title="Chez vous, partout et ailleurs" />
+                <PictureBanner banner={Picture} alt="Photos de montagne" className="picture__banner--home" title="Chez vous, partout et ailleurs" />
                 <Cards />
             </main>
             <Footer />

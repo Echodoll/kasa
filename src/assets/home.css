@@ -90,8 +90,8 @@
   .picture__banner--text {
     font-size: 34px;
   }
-  .picture__banner img {
-    height: 200px;
+  .picture__banner--home {
+    height: 111px;
   }
   .card {
     padding: 30px;
@@ -118,13 +118,16 @@
     gap: 20px;
   }
   .banner__nav p {
-    font-size: 17px;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  .dropdown__config--content {
+    line-height: 20px;
+    padding: 15px;
   }
   .picture__banner {
     padding: 0px;
-  }
-  .picture__banner img {
-    height: 111px;
+    margin-bottom: 20px;
   }
   .picture__banner--text {
     display: flex;
