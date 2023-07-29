@@ -198,6 +198,9 @@
     gap: 35px;
   }
   .dropdown__config--content {
+    padding: 10px;
+  }
+  .dropdown__config--content ul {
     padding: 0px;
   }
   .carrousel__counter {

@@ -11,6 +11,10 @@
   flex-direction: column;
 }
 
+.open {
+  margin-bottom: 20px;
+}
+
 @media screen and (max-width: 768px) {
   .drop__apropos {
     width: 100%;

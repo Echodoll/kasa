@@ -191,7 +191,10 @@ flex-wrap: wrap;
     gap:35px;
 }
 .dropdown__config--content{
-    padding: 0px;
+    padding:10px;
+    & ul {
+        padding: 0px;
+    }
 }
 .carrousel__counter{
     display: none;
